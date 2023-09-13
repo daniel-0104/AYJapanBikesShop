@@ -355,22 +355,6 @@ new Glider(document.querySelector('.glider'), {
 });
 //rider slider btn end
 
-// footer dropdown start 
-$(document).ready(function(){
-  function toggleDropdown(btnId, contentId, downId, upId) {
-    $(btnId).click(function(){
-      $(contentId).toggle(1000);
-      $(downId).toggle();
-      $(upId).toggle();
-    });
-    $(contentId).hide();
-  }
-
-  toggleDropdown('#toggle-btn', '#drop-items', '#down', '#up');
-  toggleDropdown('#toggle-btn2', '#drop-items2', '#down2', '#up2');
-  toggleDropdown('#toggle-btn3', '#drop-items3', '#down3', '#up3');
-});
-// footer dropdown end
 } 
 else if (currentPage === 'page2') {
 // product size check start 
@@ -464,3 +448,20 @@ var swiper2 = new Swiper("#mySwiper", {
   }
 });
 // product view end 
+
+// footer dropdown start 
+$(document).ready(function(){
+  function toggleDropdown(btnId, contentId, downId, upId) {
+    $(btnId).click(function(){
+      $(contentId).toggle(1000);
+      $(downId).toggle();
+      $(upId).toggle();
+    });
+    $(contentId).hide();
+  }
+
+  toggleDropdown('#toggle-btn', '#drop-items', '#down', '#up');
+  toggleDropdown('#toggle-btn2', '#drop-items2', '#down2', '#up2');
+  toggleDropdown('#toggle-btn3', '#drop-items3', '#down3', '#up3');
+});
+// footer dropdown end
