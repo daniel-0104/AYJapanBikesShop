@@ -1090,6 +1090,26 @@ table, th, td {
     font-weight: bold;
     font-size: 15pt;
 }
+#review-comment > div > img{
+    width: 70px;
+    height: 70px;
+    border-radius: 70px;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+@media screen and (max-width: 576px){
+    #review-comment{
+        border: 1px solid white;
+        padding: 10px;
+    }
+    #review-comment > div > img{
+        margin: 0;
+        margin-bottom: 10px;
+        justify-content: left;
+        text-align: start;
+    }
+}
 #rev-down{
     display: block;
 }
